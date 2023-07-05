@@ -5,7 +5,7 @@ metadata:
     app.kubernetes.io/component: exporter
     app.kubernetes.io/name: node-exporter
     app.kubernetes.io/part-of: kube-prometheus
-    app.kubernetes.io/version: 1.5.0
+    app.kubernetes.io/version: 1.6.0
     prometheus: k8s
     role: alert-rules
   name: node-exporter-rules
@@ -174,7 +174,7 @@ spec:
         severity: warning
     - alert: NodeClockSkewDetected
       annotations:
-        description: Clock on {{ $labels.instance }} is out of sync by more than 300s. Ensure NTP is configured correctly on this host.
+        description: Clock on {{ $labels.instance }} is out of sync by more than 0.05s. Ensure NTP is configured correctly on this host.
         runbook_url: https://runbooks.prometheus-operator.dev/runbooks/node/nodeclockskewdetected
         summary: Clock skew detected.
       expr: |

@@ -1,14 +1,14 @@
 module _ // go.mod created for tooling dependencies
 
-go 1.18
+go 1.19
 
 require (
 	github.com/armosec/kubescape v1.0.139
 	github.com/brancz/gojsontoyaml v0.1.0
 	github.com/bwplotka/mdox v0.9.1-0.20220718065926-6a6aac7d5d30
-	github.com/google/go-jsonnet v0.19.1
+	github.com/google/go-jsonnet v0.20.0
 	github.com/jsonnet-bundler/jsonnet-bundler v0.5.1
-	github.com/yannh/kubeconform v0.6.1
+	github.com/yannh/kubeconform v0.6.2
 	sigs.k8s.io/yaml v1.3.0 // indirect
 )
 
@@ -50,7 +50,7 @@ require (
 	github.com/coreos/go-oidc v2.2.1+incompatible // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/dlclark/regexp2 v1.4.0 // indirect
-	github.com/docker/docker v20.10.9+incompatible // indirect
+	github.com/docker/docker v20.10.24+incompatible // indirect
 	github.com/docker/go-connections v0.4.0 // indirect
 	github.com/docker/go-units v0.4.0 // indirect
 	github.com/efficientgo/tools/core v0.0.0-20210609125236-d73259166f20 // indirect
